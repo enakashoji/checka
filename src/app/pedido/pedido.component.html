@@ -1,0 +1,15 @@
+<h2>Pedido</h2>
+<div>
+    <label for="nome">Nome do produto: </label>
+    <li *ngFor="let pedido of lista">
+        <ul>{{pedido.produto.nome}}</ul>
+    </li>
+</div>
+<div>
+    <button id="basic" type="button" mat-button (click)="handleButton()">
+        Basic button
+      </button>
+</div>
+<div>
+    Esse foi o escolhido: {{selecionado.produto.nome}}
+</div>
